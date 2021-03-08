@@ -13,15 +13,15 @@
         \vspace*{1cm}
             
         \Huge
-        \textbf{Título del trabajo}
+        \textbf{Informática II}
             
         \vspace{0.5cm}
         \LARGE
-        Subtítulo
+        Taller - Nociones de la memoria del computador
             
         \vspace{1.5cm}
             
-        \textbf{Nombres y Apellidos del autor}
+        \textbf{Diego Fernando Urbano Palma}
             
         \vfill
             
@@ -38,71 +38,25 @@
 
 \tableofcontents
 \newpage
-\section{Sección introductoria}\label{intro}
-Esta es la primera sección, podemos agregar algunos elementos adicionales y todo será escrito correctamente. Más aún, si una palabra es demasiado larga y tiene que ser truncada, babel tratará de truncarla correctamente dependiendo del idioma.
+\section{ Defina que es la memoria del computador.}\label{intro}
 
-\section{Sección de contenido} \label{contenido}
-Esta sección es para agregar toda la información correspondiente con código, citas, etc.
-\subsection{Citación}
-Vamos a citar por ejemplo un artículo de \textbf{Albert Einstein} \cite{einstein}.
-También es posible citar libros \cite{dirac} o documentos en línea \cite{knuthwebsite}.\\\\
-Revisar en la última sección el formato de las referencias en IEEE.
+la memoria del computador es un conjuto de hardware encargado que almacenar datos a corto y largo plazo
 
-\subsection{Incluir código en el documento}
-%
-A continuación, se presenta el código \ref{codigo_ejemplo}, que nos permite incluir en el informe partes de programa que requieran una explicación adicional.
-\begin{lstlisting}[language=C++, label=codigo_ejemplo]
-// Programa desarrollado, compilado y ejecutado en https://www.onlinegdb.com
-#include <iostream>
+\section{Mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo.} \label{contenido}
 
-/*
- * Esto es un comentario de varias lineas
- */
+\textbf{RAM:} es la memoria que se encarga de guardar lo que hace en el procesador, esta memoria es de corto-mediano plazo, ya que al apagar el computador todo lo que  esta en la memoria se borra    
 
-// Comentario de una sola linea
+\textbf{DISCO DURO: } es la memoria que se encarga de guardar las ordenes de al ram, esta es a largo plazo ya que no se borra cuando el equipo se apaga, aca  es donde se instalan las cosas importantes del computador, como son fiches, programas, en conclusion todo el software. 
 
-#define N 10
+\textbf{MEMORIA USB: } esta es una memoria externa del computador, la cual se puede transportar, guarda los datos a largo plano, osea, no borra su contenido cuando se desconecta del equipo, la unica desventaja con el disco duro, es su bajo capacidad y en ocasiones su procesamiento de datos 
 
-using namespace std;
+\section{Describa la manera como se gestiona la memoria en un computador.}
 
-int main()
-{
-    
-    for( int i = 0 ; i < N ; i++ ){
-        
-        if( !(i % 2) )
-            cout << " El valor de i es -> " << i << endl;
-    }
-    
-    return 0;
-}
+la \textbf{RAM} es la que guarda toda la informacion del procesador, programas que se esten corriendo en ese momento,etc, de allí pasamos a al \textbf{disco duro}, donde se almacena todo lo que tiene que ver con programas y se saca informacion antigua que el procesador requiera 
 
-//Resultado programa
+\section{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
 
-/*
-El valor de i es -> 0
-El valor de i es -> 2
-El valor de i es -> 4
-El valor de i es -> 6
-El valor de i es -> 8
-*/
-\end{lstlisting}
-En la sección \ref{imagenes}, se presentará como añadir ilustraciones al texto.
+la candidad de transistores, uanque no estoy seguro y la contuctividad de los materiasles. Esto es importante porque entre mas rapida sea una memoria mas fluido sera la interaccion con el usuario y mas rapido sera el intercambio de informacion 
 
-\section{Inclusión de imágenes} \label{imagenes}
-
-En la Figura (\ref{fig:cpplogo}), se presenta el logo de C++ contenido en la carpeta images.
-
-\begin{figure}[h]
-\includegraphics[width=4cm]{cpplogo.png}
-\centering
-\caption{Logo de C++}
-\label{fig:cpplogo}
-\end{figure}
-
-Las secciones (\ref{intro}), (\ref{contenido}) y (\ref{imagenes}) dependen del estilo del documento.
-
-\bibliographystyle{IEEEtran}
-\bibliography{references}
 
 \end{document}
